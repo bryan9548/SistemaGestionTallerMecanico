@@ -140,7 +140,7 @@ CREATE TABLE Vehiculo(
 
     Modelo NVARCHAR(100) NOT NULL,
 
-    Año INT NOT NULL,
+    AÃ±o INT NOT NULL,
 
     Placa NVARCHAR(20) NOT NULL UNIQUE,
 
