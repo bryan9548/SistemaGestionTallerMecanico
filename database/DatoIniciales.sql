@@ -4,15 +4,15 @@ GO
 INSERT INTO Persona (Nombre,Apellido,NumeroDocumento,TipoDocumento,Telefono,Email)
 VALUES
 ('Bryan','Huarcaya','70000001','DNI','987654321','bryan@gmail.com'),
-('Carlos','PÈrez','70000002','DNI','987654322','carlos@gmail.com'),
-('Luis','GÛmez','70000003','DNI','987654323','luis@gmail.com'),
+('Carlos','P√©rez','70000002','DNI','987654322','carlos@gmail.com'),
+('Luis','G√≥mez','70000003','DNI','987654323','luis@gmail.com'),
 ('Pedro','Ramirez','70000004','DNI','987654324','pedro@gmail.com'),
 ('Ana','Torres','70000005','DNI','987654325','ana@gmail.com'),
-('MarÌa','Soto','70000006','DNI','987654326','maria@gmail.com'),
-('JosÈ','Rojas','70000007','DNI','987654327','jose@gmail.com'),
+('Mar√≠a','Soto','70000006','DNI','987654326','maria@gmail.com'),
+('Jos√©','Rojas','70000007','DNI','987654327','jose@gmail.com'),
 ('Jorge','Flores','70000008','DNI','987654328','jorge@gmail.com'),
 ('Miguel','Castro','70000009','DNI','987654329','miguel@gmail.com'),
-('LucÌa','Quispe','70000010','DNI','987654330','lucia@gmail.com'),
+('Luc√≠a','Quispe','70000010','DNI','987654330','lucia@gmail.com'),
 ('Ricardo','Vega','70000011','DNI','987654331','ricardo@gmail.com'),
 ('Fernando','Salas','70000012','DNI','987654332','fernando@gmail.com'),
 ('Kevin','Lopez','70000013','DNI','987654333','kevin@gmail.com'),
@@ -22,38 +22,38 @@ VALUES
 INSERT INTO Cliente(PersonaID,RazonSocial,TipoCliente)
 VALUES
 (1,'Bryan Huarcaya','Natural'),
-(2,'Carlos PÈrez','Natural'),
-(3,'Luis GÛmez','Natural'),
+(2,'Carlos P√©rez','Natural'),
+(3,'Luis G√≥mez','Natural'),
 (4,'Pedro Ramirez','Natural'),
 (5,'Ana Torres','Natural'),
-(6,'MarÌa Soto','Natural'),
-(7,'JosÈ Rojas','Natural'),
+(6,'Mar√≠a Soto','Natural'),
+(7,'Jos√© Rojas','Natural'),
 (8,'Jorge Flores','Natural'),
 (9,'Miguel Castro','Natural'),
-(10,'LucÌa Quispe','Natural');
+(10,'Luc√≠a Quispe','Natural');
 
 INSERT INTO Empleado(PersonaID,Cargo,Sueldo)
 VALUES
 (11,'Administrador',3500),
-(12,'Mec·nico',2500),
-(13,'Mec·nico',2400),
-(14,'Mec·nico',2600),
-(15,'Mec·nico',2550);
+(12,'Mec√°nico',2500),
+(13,'Mec√°nico',2400),
+(14,'Mec√°nico',2600),
+(15,'Mec√°nico',2550);
 
 INSERT INTO Administrador(EmpleadoID,Area)
 VALUES
-(1,'AdministraciÛn');
+(1,'Administraci√≥n');
 
 INSERT INTO Mecanico(EmpleadoID,Especialidad)
 VALUES
 (2,'Motor'),
 (3,'Electricidad'),
-(4,'SuspensiÛn'),
+(4,'Suspensi√≥n'),
 (5,'Frenos');
 
 
 INSERT INTO Vehiculo
-(ClienteID,MarcaID,Modelo,AÒo,Placa)
+(ClienteID,MarcaID,Modelo,A√±o,Placa)
 VALUES
 (1,1,'Corolla',2022,'ABC123'),
 (2,2,'Sentra',2021,'DEF456'),
@@ -68,12 +68,12 @@ VALUES
 
 INSERT INTO MarcaVehiculo (NombreMarca,Pais)
 VALUES
-('Toyota','JapÛn'),
-('Nissan','JapÛn'),
-('Honda','JapÛn'),
+('Toyota','Jap√≥n'),
+('Nissan','Jap√≥n'),
+('Honda','Jap√≥n'),
 ('Hyundai','Corea'),
 ('Kia','Corea'),
-('Mazda','JapÛn'),
+('Mazda','Jap√≥n'),
 ('Chevrolet','Estados Unidos'),
 ('Ford','Estados Unidos'),
 ('Volkswagen','Alemania'),
@@ -86,12 +86,12 @@ VALUES
 ('REP002','Filtro de aire',45,15),
 ('REP003','Pastillas de freno',120,25),
 ('REP004','Disco de freno',180,12),
-('REP005','BujÌa',25,50),
-('REP006','BaterÌa',350,10),
+('REP005','Buj√≠a',25,50),
+('REP006','Bater√≠a',350,10),
 ('REP007','Radiador',420,5),
 ('REP008','Amortiguador',280,8),
 ('REP009','Aceite 20W50',90,30),
-('REP010','Correa de distribuciÛn',220,10);
+('REP010','Correa de distribuci√≥n',220,10);
 
 INSERT INTO OrdenTrabajo
 (VehiculoID,MecanicoID,Diagnostico,Estado,Total)
@@ -99,8 +99,8 @@ VALUES
 (1,1,'Cambio de aceite','En proceso',125),
 (2,2,'Cambio de frenos','Finalizado',300),
 (3,3,'Afinamiento','En proceso',180),
-(4,4,'Cambio de baterÌa','Pendiente',350),
-(5,1,'RevisiÛn general','Finalizado',150);
+(4,4,'Cambio de bater√≠a','Pendiente',350),
+(5,1,'Revisi√≥n general','Finalizado',150);
 
 
 INSERT INTO DetalleOrden
